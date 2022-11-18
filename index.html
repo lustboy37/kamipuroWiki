@@ -11,8 +11,10 @@
 </head>
 <body>
   <div id="app"></div>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script>
-    window.$docsify = {
+      window.$docsify = {
       name: '<a href="#/version"><img src="images/evething_over.jpg"></img></a>',
       repo: 'https://github.com/kamipuroWiki/kamipuroWiki',
       loadSidebar: true, // 增加：自动加载侧边栏
@@ -32,20 +34,16 @@
         hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
       }
     }
+    const gitalk = new Gitalk({
+      clientID: '9f59bfa6a14143c32f84',
+      clientSecret: '4883afeb506301d00d70394f6cc811547205f0e2',
+      repo: 'kamipuroWiki',
+      owner: 'kamipuroWiki',
+      admin: ['hsp878','kamipuroWiki'],
+      // facebook-like distraction free mode
+      distractionFreeMode: false
+    })
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-<script>
-  const gitalk = new Gitalk({
-    clientID: '9f59bfa6a14143c32f84',
-    clientSecret: '4883afeb506301d00d70394f6cc811547205f0e2',
-    repo: 'kamipuroWiki',
-    owner: 'kamipuroWiki',
-    admin: ['hsp878','kamipuroWiki'],
-    // facebook-like distraction free mode
-    distractionFreeMode: false
-  })
-</script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!--搜索插件-->
