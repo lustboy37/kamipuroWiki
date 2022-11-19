@@ -1,9 +1,12 @@
-@media screen and (min-width: 765px) and (max-width: 870px){
+@media screen and (min-width: 769px) and (max-width: 870px){
   	.app-nav{
   		width: 335px;
   	}
+    .markdown-section{
+  		padding-top: 40px ;
+  	}
   }
- @media screen and (max-width: 765px){
+ @media screen and (max-width: 769px){
   	.app-nav{
   		position:relative
   	}
