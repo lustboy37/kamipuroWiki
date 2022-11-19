@@ -1,0 +1,24 @@
+@media screen and (min-width: 765px) and (max-width: 870px){
+  	.app-nav{
+  		width: 335px;
+  	}
+  }
+ @media screen and (max-width: 765px){
+  	.app-nav{
+  		position:relative
+  	}
+  	.markdown-section{
+  		padding-top: 8px ;
+  	}
+}
+.app-nav li ul{
+  	z-index:1;
+}
+.hidden{
+ 	padding:0 5px;
+  	background-color: black;
+   	color: black !important;
+}
+.hidden:hover{
+   color:white !important;
+}
